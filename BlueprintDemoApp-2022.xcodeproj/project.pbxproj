@@ -17,6 +17,7 @@
 		A8669FE527BC406E006655F6 /* BlueprintDemoApp_2022Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FE427BC406E006655F6 /* BlueprintDemoApp_2022Tests.swift */; };
 		A8669FEF27BC406E006655F6 /* BlueprintDemoApp_2022UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FEE27BC406E006655F6 /* BlueprintDemoApp_2022UITests.swift */; };
 		A8669FF127BC406E006655F6 /* BlueprintDemoApp_2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FF027BC406E006655F6 /* BlueprintDemoApp_2022UITestsLaunchTests.swift */; };
+		A8669FFE27BC40D3006655F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FFD27BC40D3006655F6 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A8669FEA27BC406E006655F6 /* BlueprintDemoApp-2022UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BlueprintDemoApp-2022UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8669FEE27BC406E006655F6 /* BlueprintDemoApp_2022UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueprintDemoApp_2022UITests.swift; sourceTree = "<group>"; };
 		A8669FF027BC406E006655F6 /* BlueprintDemoApp_2022UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueprintDemoApp_2022UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A8669FFD27BC40D3006655F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				A8669FCA27BC406B006655F6 /* AppDelegate.swift */,
 				A8669FCC27BC406B006655F6 /* SceneDelegate.swift */,
+				A8669FFD27BC40D3006655F6 /* ContentView.swift */,
 				A8669FCE27BC406B006655F6 /* ViewController.swift */,
 				A8669FD027BC406B006655F6 /* Main.storyboard */,
 				A8669FD627BC406E006655F6 /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8669FCF27BC406B006655F6 /* ViewController.swift in Sources */,
+				A8669FFE27BC40D3006655F6 /* ContentView.swift in Sources */,
 				A8669FCB27BC406B006655F6 /* AppDelegate.swift in Sources */,
 				A8669FD527BC406B006655F6 /* BlueprintDemoApp_2022.xcdatamodeld in Sources */,
 				A8669FCD27BC406B006655F6 /* SceneDelegate.swift in Sources */,
