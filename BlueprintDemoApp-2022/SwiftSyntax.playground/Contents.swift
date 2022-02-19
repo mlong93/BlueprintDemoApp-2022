@@ -220,7 +220,7 @@ class Hackathon {
  a.setName("bye")
  
  // What will b's name be?
-
+b.getName()
  
  // What if X were a struct?
  

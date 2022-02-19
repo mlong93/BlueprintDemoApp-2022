@@ -24,12 +24,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
         
         // **** TODO (1): Let's use our HomeVC and comment this line out ****
-        let contentView = ContentView().environment(\.managedObjectContext, context)
+        // let contentView = ContentView().environment(\.managedObjectContext, context)
+        let homeVC = HomeViewController()
+        let navigationController = UINavigationController(rootViewController: homeVC)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
+            window.rootViewController = navigationController
             self.window = window
             window.makeKeyAndVisible()
         }

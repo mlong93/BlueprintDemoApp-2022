@@ -17,6 +17,8 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        self.view.backgroundColor = .white
+        
         // Add subviews to view of UIViewController
         self.view.addSubview(myForm)
         self.view.addSubview(myLabel)
@@ -24,8 +26,8 @@ class HomeViewController: UIViewController {
         self.view.addSubview(myImage)
         
         // We can only apply constraints AFTER we place them in the view.
-        myForm.backgroundColor = .red
-        myForm.borderStyle = .roundedRect
+        myForm.backgroundColor = .purple
+        myForm.borderStyle = .none
         myForm.placeholder = "Your text here..."
         myForm.translatesAutoresizingMaskIntoConstraints = false
         
