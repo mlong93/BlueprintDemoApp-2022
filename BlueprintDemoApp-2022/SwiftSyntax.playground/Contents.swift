@@ -30,7 +30,7 @@ var var8: String
 let myTuple = ("blueprint", 2021)
 
 /* Tuple Methods */
-myTuple[0]  // access element at index
+myTuple.0  // access element at index
 // Arrays //
 let myFirstArray = ["blueprint", 2021] // ERROR
 var mySecondArray: [Any] = ["blueprint", 2021]
