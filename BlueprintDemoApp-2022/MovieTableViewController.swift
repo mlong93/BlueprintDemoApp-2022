@@ -7,14 +7,21 @@
 
 import UIKit
 
+struct Movie {
+    let title, rating, synopsis: String
+    let languages, categories: [String]
+}
+
 class MovieTableViewController: UITableViewController {
+    
+    //let sectionLength = [5, 2, 1]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
+        self.tableView.register(MovieViewCell.self, forCellReuseIdentifier: MovieViewCell.movieCellId)
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
@@ -33,12 +40,16 @@ class MovieTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        cell.textLabel?.text = "Hello world"
+        let cell = tableView.dequeueReusableCell(withIdentifier: MovieViewCell.movieCellId, for: indexPath) as! MovieViewCell // indexPath = {"row": , "section":}
+        cell.setupViews()
 
         // Configure the cell...
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
     }
 
     /*

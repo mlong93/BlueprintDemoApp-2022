@@ -25,8 +25,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // **** TODO (1): Let's use our HomeVC and comment this line out ****
         // let contentView = ContentView().environment(\.managedObjectContext, context)
-        let homeVC = HomeViewController()
-        let navigationController = UINavigationController(rootViewController: homeVC)
+        let movieVC = MovieTableViewController()
+        let navigationController = UINavigationController(rootViewController: movieVC)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
