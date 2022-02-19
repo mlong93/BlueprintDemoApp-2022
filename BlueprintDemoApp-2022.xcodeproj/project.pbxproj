@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A8669FCB27BC406B006655F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FCA27BC406B006655F6 /* AppDelegate.swift */; };
 		A8669FCD27BC406B006655F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FCC27BC406B006655F6 /* SceneDelegate.swift */; };
-		A8669FCF27BC406B006655F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FCE27BC406B006655F6 /* ViewController.swift */; };
+		A8669FCF27BC406B006655F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FCE27BC406B006655F6 /* HomeViewController.swift */; };
 		A8669FD227BC406B006655F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8669FD027BC406B006655F6 /* Main.storyboard */; };
 		A8669FD527BC406B006655F6 /* BlueprintDemoApp_2022.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8669FD327BC406B006655F6 /* BlueprintDemoApp_2022.xcdatamodeld */; };
 		A8669FD727BC406E006655F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8669FD627BC406E006655F6 /* Assets.xcassets */; };
@@ -41,7 +41,7 @@
 		A8669FC727BC406B006655F6 /* BlueprintDemoApp-2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueprintDemoApp-2022.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8669FCA27BC406B006655F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8669FCC27BC406B006655F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8669FCE27BC406B006655F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8669FCE27BC406B006655F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A8669FD127BC406B006655F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8669FD427BC406B006655F6 /* BlueprintDemoApp_2022.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlueprintDemoApp_2022.xcdatamodel; sourceTree = "<group>"; };
 		A8669FD627BC406E006655F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 				A8669FCA27BC406B006655F6 /* AppDelegate.swift */,
 				A8669FCC27BC406B006655F6 /* SceneDelegate.swift */,
 				A8669FFD27BC40D3006655F6 /* ContentView.swift */,
-				A8669FCE27BC406B006655F6 /* ViewController.swift */,
+				A8669FCE27BC406B006655F6 /* HomeViewController.swift */,
 				A8669FD027BC406B006655F6 /* Main.storyboard */,
 				A8669FD627BC406E006655F6 /* Assets.xcassets */,
 				A8669FD827BC406E006655F6 /* LaunchScreen.storyboard */,
@@ -264,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8669FCF27BC406B006655F6 /* ViewController.swift in Sources */,
+				A8669FCF27BC406B006655F6 /* HomeViewController.swift in Sources */,
 				A8669FFE27BC40D3006655F6 /* ContentView.swift in Sources */,
 				A8669FCB27BC406B006655F6 /* AppDelegate.swift in Sources */,
 				A8669FD527BC406B006655F6 /* BlueprintDemoApp_2022.xcdatamodeld in Sources */,
