@@ -19,6 +19,7 @@
 		A8669FF127BC406E006655F6 /* BlueprintDemoApp_2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FF027BC406E006655F6 /* BlueprintDemoApp_2022UITestsLaunchTests.swift */; };
 		A8669FFE27BC40D3006655F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FFD27BC40D3006655F6 /* ContentView.swift */; };
 		A872DA8E27C183C000A5F41A /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872DA8D27C183C000A5F41A /* MovieTableViewController.swift */; };
+		A872DA9027C1899C00A5F41A /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872DA8F27C1899C00A5F41A /* MovieViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A8669FF027BC406E006655F6 /* BlueprintDemoApp_2022UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueprintDemoApp_2022UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A8669FFD27BC40D3006655F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A872DA8D27C183C000A5F41A /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		A872DA8F27C1899C00A5F41A /* MovieViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				A8669FCA27BC406B006655F6 /* AppDelegate.swift */,
 				A8669FCC27BC406B006655F6 /* SceneDelegate.swift */,
 				A8669FFD27BC40D3006655F6 /* ContentView.swift */,
+				A872DA8F27C1899C00A5F41A /* MovieViewCell.swift */,
 				A8669FCE27BC406B006655F6 /* HomeViewController.swift */,
 				A872DA8D27C183C000A5F41A /* MovieTableViewController.swift */,
 				A8669FD027BC406B006655F6 /* Main.storyboard */,
@@ -273,6 +276,7 @@
 				A8669FCB27BC406B006655F6 /* AppDelegate.swift in Sources */,
 				A8669FD527BC406B006655F6 /* BlueprintDemoApp_2022.xcdatamodeld in Sources */,
 				A8669FCD27BC406B006655F6 /* SceneDelegate.swift in Sources */,
+				A872DA9027C1899C00A5F41A /* MovieViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
