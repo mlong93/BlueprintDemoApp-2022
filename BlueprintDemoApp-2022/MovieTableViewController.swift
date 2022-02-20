@@ -7,14 +7,10 @@
 
 import UIKit
 
-struct Movie {
-    let title, rating, synopsis: String
-    let languages, categories: [String]
-}
-
 class MovieTableViewController: UITableViewController {
     
-    //let sectionLength = [5, 2, 1]
+    let movieParser = Movies()
+    var movieData: [Movie] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +18,9 @@ class MovieTableViewController: UITableViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         self.tableView.register(MovieViewCell.self, forCellReuseIdentifier: MovieViewCell.movieCellId)
+        
+        fetchData()
+        reloadPage()
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
@@ -36,18 +35,49 @@ class MovieTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return self.movieData.count
     }
     
+    // Creates a cell for each row, returns a MovieViewCell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        // Creates or returns an existing reusable MovieViewCell based on movie cell's unique identifier
         let cell = tableView.dequeueReusableCell(withIdentifier: MovieViewCell.movieCellId, for: indexPath) as! MovieViewCell // indexPath = {"row": , "section":}
         cell.setupViews()
 
         // Configure the cell...
+        
+        // ///////////////////////////////////////////////// //
+        // How to pass data from TableView to TableViewCell! //
+        // ///////////////////////////////////////////////// //
+        let index = indexPath.row
+        let movie = self.movieData[index]
+        cell.title.text = movie.title
+        cell.synopsis.text = movie.synopsis
+        cell.rating.text = movie.rating + "/10"
+        cell.releaseDate.text = movie.releaseDate
+        
+        // ////////////////////////////////////////////////////////////////////////////////
+        // DispatchQueue manages how tasks are executed                                  //
+        // - global() are tasks happening in the background (doesn't matter if onscreen) //
+        // - async is usually used for tasks that take a long time (e.g. data fetching)  //
+        // so as to not block other tasks from executing timely                          //
+        // ///////////////////////////////////////////////////////////////////////////// //
+        let imageURL = URL(string: movie.imageURL)!
+        DispatchQueue.global().async {
+            guard let data = try? Data(contentsOf: imageURL) else { return }
+            
+            DispatchQueue.main.async {
+                let posterImage = UIImage(data: data)
+                cell.poster.contentMode = .scaleAspectFit
+                cell.poster.image = posterImage
+            }
+        }
 
         return cell
     }
     
+    // Let's adjust the height of each cell. In collection views, you have more creative freedom and can change the size (shape) of each cell.
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
@@ -97,6 +127,21 @@ class MovieTableViewController: UITableViewController {
     }
     */
 
+}
+
+// UI functions
+extension MovieTableViewController {
+    // more functions here
+    
+    func fetchData() {
+        movieParser.getData()
+        self.movieData = movieParser.getMovies()
+        print(self.movieData.count)
+    }
+    
+    func reloadPage() {
+        self.tableView.reloadData()
+    }
 }
 
 import SwiftUI
