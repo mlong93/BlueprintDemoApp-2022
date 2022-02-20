@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A85B0EA227C20112008769D8 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B0EA127C20112008769D8 /* MovieView.swift */; };
 		A8669FCB27BC406B006655F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FCA27BC406B006655F6 /* AppDelegate.swift */; };
 		A8669FCD27BC406B006655F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FCC27BC406B006655F6 /* SceneDelegate.swift */; };
-		A8669FCF27BC406B006655F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FCE27BC406B006655F6 /* ViewController.swift */; };
+		A8669FCF27BC406B006655F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FCE27BC406B006655F6 /* HomeViewController.swift */; };
 		A8669FD227BC406B006655F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8669FD027BC406B006655F6 /* Main.storyboard */; };
 		A8669FD527BC406B006655F6 /* BlueprintDemoApp_2022.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8669FD327BC406B006655F6 /* BlueprintDemoApp_2022.xcdatamodeld */; };
 		A8669FD727BC406E006655F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8669FD627BC406E006655F6 /* Assets.xcassets */; };
@@ -18,6 +19,11 @@
 		A8669FEF27BC406E006655F6 /* BlueprintDemoApp_2022UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FEE27BC406E006655F6 /* BlueprintDemoApp_2022UITests.swift */; };
 		A8669FF127BC406E006655F6 /* BlueprintDemoApp_2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FF027BC406E006655F6 /* BlueprintDemoApp_2022UITestsLaunchTests.swift */; };
 		A8669FFE27BC40D3006655F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FFD27BC40D3006655F6 /* ContentView.swift */; };
+		A872DA8E27C183C000A5F41A /* MovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872DA8D27C183C000A5F41A /* MovieTableViewController.swift */; };
+		A872DA9027C1899C00A5F41A /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872DA8F27C1899C00A5F41A /* MovieViewCell.swift */; };
+		A872DA9327C1A20900A5F41A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = A872DA9227C1A20900A5F41A /* SwiftyJSON */; };
+		A872DA9527C1A29B00A5F41A /* MovieParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A872DA9427C1A29B00A5F41A /* MovieParser.swift */; };
+		A872DA9727C1AB4200A5F41A /* Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = A872DA9627C1AB4200A5F41A /* Movies.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A85B0EA127C20112008769D8 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
 		A8669FC727BC406B006655F6 /* BlueprintDemoApp-2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueprintDemoApp-2022.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8669FCA27BC406B006655F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8669FCC27BC406B006655F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A8669FCE27BC406B006655F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8669FCE27BC406B006655F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A8669FD127BC406B006655F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8669FD427BC406B006655F6 /* BlueprintDemoApp_2022.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlueprintDemoApp_2022.xcdatamodel; sourceTree = "<group>"; };
 		A8669FD627BC406E006655F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +60,10 @@
 		A8669FEE27BC406E006655F6 /* BlueprintDemoApp_2022UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueprintDemoApp_2022UITests.swift; sourceTree = "<group>"; };
 		A8669FF027BC406E006655F6 /* BlueprintDemoApp_2022UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueprintDemoApp_2022UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A8669FFD27BC40D3006655F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A872DA8D27C183C000A5F41A /* MovieTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewController.swift; sourceTree = "<group>"; };
+		A872DA8F27C1899C00A5F41A /* MovieViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewCell.swift; sourceTree = "<group>"; };
+		A872DA9427C1A29B00A5F41A /* MovieParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieParser.swift; sourceTree = "<group>"; };
+		A872DA9627C1AB4200A5F41A /* Movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Movies.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A872DA9327C1A20900A5F41A /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +118,12 @@
 				A8669FCA27BC406B006655F6 /* AppDelegate.swift */,
 				A8669FCC27BC406B006655F6 /* SceneDelegate.swift */,
 				A8669FFD27BC40D3006655F6 /* ContentView.swift */,
-				A8669FCE27BC406B006655F6 /* ViewController.swift */,
+				A872DA8F27C1899C00A5F41A /* MovieViewCell.swift */,
+				A8669FCE27BC406B006655F6 /* HomeViewController.swift */,
+				A872DA9627C1AB4200A5F41A /* Movies.json */,
+				A872DA8D27C183C000A5F41A /* MovieTableViewController.swift */,
+				A85B0EA127C20112008769D8 /* MovieView.swift */,
+				A872DA9427C1A29B00A5F41A /* MovieParser.swift */,
 				A8669FD027BC406B006655F6 /* Main.storyboard */,
 				A8669FD627BC406E006655F6 /* Assets.xcassets */,
 				A8669FD827BC406E006655F6 /* LaunchScreen.storyboard */,
@@ -149,6 +166,9 @@
 			dependencies = (
 			);
 			name = "BlueprintDemoApp-2022";
+			packageProductDependencies = (
+				A872DA9227C1A20900A5F41A /* SwiftyJSON */,
+			);
 			productName = "BlueprintDemoApp-2022";
 			productReference = A8669FC727BC406B006655F6 /* BlueprintDemoApp-2022.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +241,9 @@
 				Base,
 			);
 			mainGroup = A8669FBE27BC406B006655F6;
+			packageReferences = (
+				A872DA9127C1A20900A5F41A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = A8669FC827BC406B006655F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -239,6 +262,7 @@
 			files = (
 				A8669FDA27BC406E006655F6 /* LaunchScreen.storyboard in Resources */,
 				A8669FD727BC406E006655F6 /* Assets.xcassets in Resources */,
+				A872DA9727C1AB4200A5F41A /* Movies.json in Resources */,
 				A8669FD227BC406B006655F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,11 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8669FCF27BC406B006655F6 /* ViewController.swift in Sources */,
+				A8669FCF27BC406B006655F6 /* HomeViewController.swift in Sources */,
+				A872DA9527C1A29B00A5F41A /* MovieParser.swift in Sources */,
 				A8669FFE27BC40D3006655F6 /* ContentView.swift in Sources */,
+				A872DA8E27C183C000A5F41A /* MovieTableViewController.swift in Sources */,
+				A85B0EA227C20112008769D8 /* MovieView.swift in Sources */,
 				A8669FCB27BC406B006655F6 /* AppDelegate.swift in Sources */,
 				A8669FD527BC406B006655F6 /* BlueprintDemoApp_2022.xcdatamodeld in Sources */,
 				A8669FCD27BC406B006655F6 /* SceneDelegate.swift in Sources */,
+				A872DA9027C1899C00A5F41A /* MovieViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +640,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A872DA9127C1A20900A5F41A /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A872DA9227C1A20900A5F41A /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A872DA9127C1A20900A5F41A /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A8669FD327BC406B006655F6 /* BlueprintDemoApp_2022.xcdatamodeld */ = {
