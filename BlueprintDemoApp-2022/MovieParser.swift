@@ -38,7 +38,7 @@ class Movies {
     
     // Often times when you make an API request to a public server, they will have
     // you make an account to give you an API key to actually access their APIs
-    private let apiKey = "?api_key=" + "cd4b0ccf04fbd7e32df6da4d1c03bd36"
+    private let apiKey = "?api_key=" + secretAPIKey
     
     // the second half of the API URL
     private let baseURL2 = "&language=en-US&page=1"
