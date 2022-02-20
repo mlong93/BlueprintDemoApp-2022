@@ -39,11 +39,11 @@ class MovieViewCell: UITableViewCell {
         addSubview(poster)
         
         // Change the background color of the elements for easy layout debugging. You can remove this later!
-        title.backgroundColor = .red
-        synopsis.backgroundColor = .green
-        rating.backgroundColor = .blue
-        releaseDate.backgroundColor = .yellow
-        poster.backgroundColor = .purple
+        // title.backgroundColor = .red
+        // synopsis.backgroundColor = .green
+        // rating.backgroundColor = .blue
+        // releaseDate.backgroundColor = .yellow
+        // poster.backgroundColor = .purple
         
         // Let's put the poster in the leftmost section of the cell
         poster.translatesAutoresizingMaskIntoConstraints = false
@@ -63,6 +63,7 @@ class MovieViewCell: UITableViewCell {
             title.topAnchor.constraint(equalTo: self.topAnchor, constant: 5),
             title.heightAnchor.constraint(equalToConstant: 60)
         ])
+        title.numberOfLines = 3
         
         // The rating goes underneath the right half of the title.
         rating.translatesAutoresizingMaskIntoConstraints = false
@@ -81,6 +82,7 @@ class MovieViewCell: UITableViewCell {
             synopsis.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 5),
             synopsis.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -5)
         ])
+        synopsis.numberOfLines = 4
     }
 
 }

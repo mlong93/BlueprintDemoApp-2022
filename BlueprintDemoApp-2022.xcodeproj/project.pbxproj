@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A85B0EA227C20112008769D8 /* MovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B0EA127C20112008769D8 /* MovieView.swift */; };
 		A8669FCB27BC406B006655F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FCA27BC406B006655F6 /* AppDelegate.swift */; };
 		A8669FCD27BC406B006655F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FCC27BC406B006655F6 /* SceneDelegate.swift */; };
 		A8669FCF27BC406B006655F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8669FCE27BC406B006655F6 /* HomeViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A85B0EA127C20112008769D8 /* MovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView.swift; sourceTree = "<group>"; };
 		A8669FC727BC406B006655F6 /* BlueprintDemoApp-2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueprintDemoApp-2022.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8669FCA27BC406B006655F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8669FCC27BC406B006655F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				A8669FCE27BC406B006655F6 /* HomeViewController.swift */,
 				A872DA9627C1AB4200A5F41A /* Movies.json */,
 				A872DA8D27C183C000A5F41A /* MovieTableViewController.swift */,
+				A85B0EA127C20112008769D8 /* MovieView.swift */,
 				A872DA9427C1A29B00A5F41A /* MovieParser.swift */,
 				A8669FD027BC406B006655F6 /* Main.storyboard */,
 				A8669FD627BC406E006655F6 /* Assets.xcassets */,
@@ -289,6 +292,7 @@
 				A872DA9527C1A29B00A5F41A /* MovieParser.swift in Sources */,
 				A8669FFE27BC40D3006655F6 /* ContentView.swift in Sources */,
 				A872DA8E27C183C000A5F41A /* MovieTableViewController.swift in Sources */,
+				A85B0EA227C20112008769D8 /* MovieView.swift in Sources */,
 				A8669FCB27BC406B006655F6 /* AppDelegate.swift in Sources */,
 				A8669FD527BC406B006655F6 /* BlueprintDemoApp_2022.xcdatamodeld in Sources */,
 				A8669FCD27BC406B006655F6 /* SceneDelegate.swift in Sources */,
